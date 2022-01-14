@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+#SPDX-FileCopyrightText:2022 Ryuich Ueda + Takeru Matsumoto
+#SPDX-License-Identifier:BSD-3-Clause License
 import rospy
 from std_msgs.msg import Int32
 
