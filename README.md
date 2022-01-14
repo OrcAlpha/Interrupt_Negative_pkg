@@ -22,36 +22,43 @@ OS ...Ubuntu 20.04 LTS
 ハード...Raspberry Pi4
 
 ## 使用方法
-* パッケージのセッティング
+### パッケージのセッティング
  
  まず端末を4つ準備します。
   
-  ### 端末1
- ```$ cd catkin_ws/src/Interrupt_Negative_pkg/script```
+  * 端末1
+ 
+```$ cd catkin_ws/src/Interrupt_Negative_pkg/script```
   
-  ```$ chmod +x count.py```
+```$ chmod +x count.py```
    
-   ```$ chmod +x Interruption.py```
+```$ chmod +x Interruption.py```
     
-    ```$ roscore```
-* コンパイル
+### rosの起動
  
-```$ make```
-* インストール
-
-```$ sudo insmod myled.ko```
-* 権限の設定
+* 端末1
+    
+```$ roscore```
  
- ```$ sudo chmod 666 /dev/myled0``` 
-* LEDの点灯
+* 端末2
  
- ```$ echo (0~9,-) > /dev/myled0```
-* アンインストール
-
-```$ sudo rmmod myled```
+```$ rosrun Interrupt_Negative_pkg count.py```
  
-```$ make clean```
-
+* 端末3
+ 
+```$ rosrun Interrupt_Negative_pkg Interruption.py```
+ 
+### 動作の確認
+* 端末4
+ 
+```$ rostopic echo /count.py```
+ 
+カウントアップする数字が出力されます。
+ 
+```$ rostopic echo /interruption```
+ 
+カウントアップする数字の間に負の値が挿入されます。
+ 
 ## ライセンス
  BSD-3-Clause License
 
