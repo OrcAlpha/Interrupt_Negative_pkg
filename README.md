@@ -5,16 +5,15 @@
 ロボットシステム学課題２
  
 講義動画：ロボットシステム学第10回(<https://www.youtube.com/watch?v=PL85Pw_zQH0>)を見ながら、その手順に則って作成。
+ 
 ## コードについて
 千葉工業大学　未来ロボティクス学科准教授　上田隆一先生(<https://github.com/ryuichiueda>)のコードの一部を改変したものです。count.pyについてはrateを変更しただけであり、上田隆一先生のコードをそのまま使わせていただきました。
 
-## オリジナルの変更点
-* /dev/myled0　をcatしたときの出力文字を変更。
- 
-* LED点灯のパターンを追加。
+## パッケージについて
+count.pyが送るカウントアップする数字をInterruption.pyが受け取り、値の間に負の数を割り込ませて出力します。
 
 ## デモ映像
-<https://youtu.be/TQ50Kr4OWGU>
+<>
 
 ## 動作確認環境
 OS ...Ubuntu 20.04 LTS
@@ -22,6 +21,7 @@ OS ...Ubuntu 20.04 LTS
 ハード...Raspberry Pi4
 
 ## 使用方法
+
 ### パッケージのセッティング
  
  まず端末を4つ準備します。
@@ -35,7 +35,6 @@ OS ...Ubuntu 20.04 LTS
 ```$ chmod +x Interruption.py```
     
 ### rosの起動
- 
 * 端末1
     
 ```$ roscore```
