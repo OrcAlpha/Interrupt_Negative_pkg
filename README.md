@@ -50,7 +50,7 @@ OS ...Ubuntu 20.04 LTS
 ### 動作の確認
 * 端末4
  
-```$ rostopic echo /count```
+```$ rostopic echo /count_up```
  
 カウントアップする数字が出力されます。
  
