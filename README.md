@@ -13,7 +13,7 @@
 count.pyが送るカウントアップする数字をInterruption.pyが受け取り、値の間に負の数を割り込ませて出力します。
 
 ## デモ映像
-<>
+<https://youtu.be/q7fCzKzoGfA>
 
 ## 動作確認環境
 OS ...Ubuntu 20.04 LTS
