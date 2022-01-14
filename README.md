@@ -60,8 +60,3 @@ OS ...Ubuntu 20.04 LTS
  
 ## ライセンス
  BSD-3-Clause License
-
-## 参考
-READMEの書き方(<https://laraweb.net/surrounding/7477/>)
- 
- 【GitHub】README.md に画像を表示させる簡単な方法(<https://qiita.com/r_midori/items/2c4feb5de05535441bc8>)
