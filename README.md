@@ -28,7 +28,7 @@ OS ...Ubuntu 20.04 LTS
   
   * 端末1
  
-```$ cd catkin_ws/src/Interrupt_Negative_pkg/script```
+```$ cd catkin_ws/src/Interrupt_Negative_pkg/scripts```
   
 ```$ chmod +x count.py```
    
