@@ -6,7 +6,7 @@
  
 講義動画：ロボットシステム学第10回(<https://www.youtube.com/watch?v=PL85Pw_zQH0>)を見ながら、その手順に則って作成。
 ## コードについて
-千葉工業大学　未来ロボティクス学科准教授　上田隆一先生(<https://github.com/ryuichiueda>)のコードの一部を改変したものです。
+千葉工業大学　未来ロボティクス学科准教授　上田隆一先生(<https://github.com/ryuichiueda>)のコードの一部を改変したものです。count.pyについてはrateを変更しただけであり、上田隆一先生のコードをそのまま使わせていただきました。
 
 ## オリジナルの変更点
 * /dev/myled0　をcatしたときの出力文字を変更。
@@ -22,13 +22,18 @@ OS ...Ubuntu 20.04 LTS
 ハード...Raspberry Pi4
 
 ## 使用方法
-* ハードのセッティング
+* パッケージのセッティング
  
-　LEDのアノードをRaspberry Pi4
-のGPIO25ピンに繋ぎ、カソードをGNDに接続する。LEDには200Ω程度の抵抗を挟むことが理想である。
- 
- この図では赤いコードがアノード、青いコードがカソードになっている。
-![IMG_E0642](https://user-images.githubusercontent.com/92071428/147917005-24eb0873-2156-4357-9fed-8f7461dc2b2f.JPG)
+ まず端末を4つ準備します。
+  
+  ### 端末1
+ ```$ cd catkin_ws/src/Interrupt_Negative_pkg/script```
+  
+  ```$ chmod +x count.py```
+   
+   ```$ chmod +x Interruption.py```
+    
+    ```$ roscore```
 * コンパイル
  
 ```$ make```
